@@ -1,0 +1,389 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #F0EFE2 url(background.png) repeat;
+  color: #000;}
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;}
+
+
+h1, h2
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #000000;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;}
+
+h3, h4, h5, h6 {
+    font: normal 130% 'century gothic', arial, sans-serif;
+    color: #000000;
+    margin: 0 15px 15px 0;
+    padding: 15px 15px 5px 0;
+
+}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ background: transparent;
+  height: 202px;}
+
+#logo
+{ width: 70%;
+  position: relative;
+  height: 148px;
+  border-bottom: 2px solid #FFF;} /*line under logo*/
+
+#logo #logo_text 
+{ position: absolute; 
+  top: 20px;
+  left: 0;}
+
+#logo h1, #logo h2
+{ font: normal 300% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  letter-spacing: -1px;
+  text-decoration: none;}
+
+#logo_text h1 a .logo_colour
+{ color: rgb(158, 237, 237);}
+
+#logo_text h2
+{ font-size: 100%;
+  padding: 4px 0 0 0;
+  color: #FFF;}
+
+
+/* Navbar styles */
+#menubar {
+
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Align the items vertically */
+    padding: 0 50px; 
+  }
+  
+  ul#menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%; /* Full width to contain flex items */
+    margin: 0;
+  }
+  
+  ul#menu li {
+    margin: 0 10px; /* Adjust margin for even spacing */
+  }
+  
+  ul#menu li a {
+    letter-spacing: 0.1em;
+    font: normal 100% arial, sans-serif;
+    padding: 9px 16px;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+  }
+  
+  ul#menu li a:hover, ul#menu li.selected a {
+    color: rgb(138, 234, 119);
+  }
+  
+  /* Responsive design adjustments */
+  @media only screen and (max-width: 1024px) {
+    #menubar {
+        padding: 0;  
+        flex-wrap: wrap; /* Allow menu items to wrap */
+    }
+  
+    ul#menu {
+        justify-content: flex-start; /* Stack the menu items vertically */
+    }
+  
+    ul#menu li {
+      width: 100%; /* Make the menu items full width */
+      margin: 5px 0; /* Adjust margin for stacked items */
+    }
+  
+    ul#menu li a {
+        font-size: 0.9em; /* smaller font size */
+        padding: 8px 12px; /* smaller padding */
+    }
+  }
+  
+
+/* Main content styles */
+
+main {
+    overflow: hidden;
+    padding: 0px 100px 20px 20px;
+    margin: 0 auto 0 auto;
+    width: 100%; /* Responsive width */
+    max-width: 1000px; /* Maximum width to prevent overly wide lines of text */
+    color: rgb(0, 0, 0)010;
+    font-size: medium;
+    background: #FFF;
+}
+
+/* Footer styles */
+#footer
+{ width: 898px;
+  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  height: 33px;
+  padding: 24px 0 5px 0;
+  text-align: center; 
+  background: transparent;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  }
+
+  /* Footer link styles */
+#footer a {
+    color: #FFF; /* White color */
+    text-decoration: none; /* No underline */
+}
+
+/* Footer link hover and selected styles */
+#footer a:hover, 
+#footer a.selected {
+    color: rgb(138, 234, 119); /* Green color */
+ 
+}
+
+
+button {display: inline-block;
+outline: 0;
+cursor: pointer;
+padding: 5px 16px;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+vertical-align: middle;
+border: 2px solid;
+border-radius: 6px;
+color: #000000;
+background-color: rgb(121, 205, 104);
+border-color: #06060626;
+box-shadow: rgba(11, 11, 11, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+transition-property: color, background-color, border-color;
+}
+
+button:hover {
+    background-color: #2c974b;
+    border-color: #1b1f2326;
+    transition-duration: 0.1s;
+}
+
+.link-button {
+    text-decoration: none;
+    color: rgb(0, 111, 34);
+    padding: 2px 4px;
+    border: 1px solid rgb(1, 162, 49);
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  .link-button:hover {
+    background-color: lightblue;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .booking-details {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .booking-header {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+  }
+
+  /*Privacy statement styles*/
+
+  ol {
+    margin-left: 20px;
+  }
+  
+  ol > li {
+    margin-bottom: 10px;
+  }
+  
+  ol > li > ul {
+    margin-top: 10px;
+    padding-left: 40px; /* increases space from the edge */
+  }
+  
+  ol > li > ul > li {
+    margin-bottom: 5px; /* Adds more space between list items */
+  }
+
+  ul.personal-info > li {
+    margin-bottom: 15px; /* This adds space only between the li elements of the personal-info class */
+  }
+  
+  /*edit/make booking styles*/
+  .booking-form label,
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea
+   {
+      display: block; /* Make form elements block-level for full-width */
+      margin-bottom: 1em; /* Add space below each form element */
+  }
+  
+  .booking-form label {
+      margin-top: 1em; /* Add space above each label*/
+  }
+  
+  .inline-button {
+    display: inline-block; /* Makes the buttons sit side-by-side */
+    margin-right: 10px; /* Adds some space between the buttons */
+    margin-bottom: 15px;
+}
+
+.date-input {
+  background: none;
+  border: 1px solid #ccc;
+  width: auto; /* Adjust width based on content */
+  display: inline-block; /* Allows the input to not take the full width */
+  max-width: 300px; /* Maximum width of the input field */
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.buttons-flex-container {
+  display: flex; /* This will lay out its children (the buttons) in a row */
+  justify-content: space-between; /* This will put space between the buttons */
+  align-items: center; /* This will vertically center the buttons in the container */
+  padding: 10px; /* Add some padding around the buttons */
+}
+
+.inline-button {
+  margin-right: 10px; /* Adds some space to the right of the buttons */
+
+}
+
+
+
+/*Container for login*/
+.form-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  margin: 0 auto; /* Center horizontally */
+  /*margin-left: 40%;*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(121, 205, 104);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #2c974b;
+}
+
+ul li a.dash-button {
+  text-decoration: none;
+  padding: 10px 15px; /* Smaller padding to reduce button size */
+  margin: 0 10px 10px 0; /* Margin to add space between buttons, adjust as needed */
+  border-radius: 4px;
+  color: #000000;
+  background-color: rgb(104, 205, 143);
+  border: 1px solid #06060626;
+  box-shadow: rgba(11, 11, 11, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: color 0.2s, background-color 0.2s, border 0.2s;
+  display: inline-block;
+  text-align: center;
+}
+
+
+body a.highlight-button {
+  text-decoration: none !important;
+  padding: 10px 15px !important;
+  border-radius: 5px !important;
+  color: #FFF !important;
+  background-color: #007BFF !important; /* Bright blue color */
+  border: none !important;
+  display: inline-block !important;
+  margin-top: 10px !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease !important;
+}
+
+body a.highlight-button:hover {
+  background-color: #0056b3 !important; /* Darker shade of blue for hover effect */
+}
+
+
+
+
+
